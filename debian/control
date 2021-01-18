@@ -1,0 +1,22 @@
+Source: phalerts
+Section: python
+Priority: optional
+Maintainer: Filippo Giunchedi <filippo@wikimedia.org>
+Build-Depends: debhelper (>= 12), python3-parameterized, python3-mock,
+  python3-flask,
+  python3-jinja2,
+  python3-phabricator,
+  python3-prometheus-client
+Standards-Version: 3.9.8
+
+Package: phalerts
+Architecture: all
+Depends: ${misc:Depends}, python3,
+  python3-flask,
+  python3-jinja2,
+  python3-phabricator,
+  python3-prometheus-client
+Description: Phabricator webhook for Prometheus Alertmanager
+ phalerts is a simple service that implements Alertmanager webhook receiver API
+ and creates/updates Phabricator tasks based on alert notifications from
+ Alertmanager.

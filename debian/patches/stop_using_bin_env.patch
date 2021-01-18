@@ -1,0 +1,22 @@
+Description: /usr/bin/env is deprecated
+Author: Filippo Giunchedi <filippo@wikimedia.org>
+
+---
+Last-Update: 2021-01-08
+
+--- a/phalerts.py
++++ b/phalerts.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python3
++#!/usr/bin/python3
+ """Creates and updates Phabricator / Maniphest tasks for Prometheus alerts.
+ 
+ phalerts implements Prometheus alertmanager webhook API and creates/updates
+--- a/phalerts_test.py
++++ b/phalerts_test.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python3
++#!/usr/bin/python3
+ 
+ # https://github.com/knyar/phalerts
+ # Licensed under MIT license.

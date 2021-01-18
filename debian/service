@@ -1,0 +1,11 @@
+[Unit]
+Description=Phabricator webhook for Prometheus Alertmanager
+
+[Service]
+Restart=always
+User=phalerts
+EnvironmentFile=-/etc/default/phalerts
+ExecStart=/usr/bin/phalerts $ARGS
+
+[Install]
+WantedBy=multi-user.target

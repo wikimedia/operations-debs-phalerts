@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	install -D -m 644 -o root -g root debian/phalerts.sysusers debian/phalerts/usr/lib/sysusers.d/phalerts.conf
+	dh_auto_install $@

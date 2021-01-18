@@ -1,0 +1,16 @@
+Description: Minimal Makefile with standard targets
+Author: Filippo Giunchedi <filippo@wikimedia.org>
+
+---
+Last-Update: 2021-01-08
+
+--- /dev/null
++++ phalerts-0+git20210108/Makefile
+@@ -0,0 +1,7 @@
++build:
++
++check:
++	python3 phalerts_test.py
++
++install:
++	install -D -v -m755 phalerts.py $(DESTDIR)/usr/bin/phalerts
