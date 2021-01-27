@@ -1,3 +1,9 @@
+phalerts (0+git20210125.055cafe0-1) unstable; urgency=medium
+
+  * Upstream support for PHIDs
+
+ -- Filippo Giunchedi <filippo@debian.org>  Wed, 27 Jan 2021 12:15:28 +0100
+
 phalerts (0+git20210115.42695f18-1) unstable; urgency=medium
 
   * First Debian packaging, fixes https://phabricator.wikimedia.org/T272453
